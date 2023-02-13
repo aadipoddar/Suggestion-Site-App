@@ -1,7 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-using MongoDB.Driver;
-
 namespace SuggestionAppLibrary.DataAccess;
 
 public class DbConnection : IDbConnection
