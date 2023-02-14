@@ -4,6 +4,7 @@ public interface ISuggestionData
 {
     Task CreateSuggestion(SuggestionModel suggestion);
     Task<List<SuggestionModel>> GetAllApprovedSuggestions();
+    Task<List<SuggestionModel>> GetUsersSuggestions(string userId);
     Task<List<SuggestionModel>> GetAllSuggestions();
     Task<List<SuggestionModel>> GetAllSuggestionsWaitingForApproval();
     Task<SuggestionModel> GetSuggestion(string id);
